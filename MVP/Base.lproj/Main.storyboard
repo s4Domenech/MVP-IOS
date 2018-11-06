@@ -25,7 +25,8 @@
                                         <rect key="frame" x="152.5" y="0.0" width="30" height="607"/>
                                         <state key="normal" title="Map"/>
                                         <connections>
-                                            <action selector="changeLabelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="csG-mt-qAg"/>
+                                            <action selector="mapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="csG-mt-qAg"/>
+                                            <segue destination="IhN-gF-xe4" kind="presentation" identifier="mapview" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="aDM-hh-0FF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -52,6 +53,15 @@
                     <view key="view" contentMode="scaleToFill" id="YHq-Yw-rMS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nice! You are in the second view!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYa-zd-MQl">
+                                <rect key="frame" x="61" y="323" width="253" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Kqk-qa-kHQ"/>
                     </view>

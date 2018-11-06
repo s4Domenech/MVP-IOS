@@ -9,17 +9,17 @@
 import Foundation
 
 class ViewControllerPresenter {
-    var view: View
+    var navigator: Navigator
     
-    init(view: View) {
-        self.view = view
+    init(navigator: Navigator) {
+        self.navigator = navigator
     }
     
-    func changeLabelButtonPressed() {
-        self.view.changeLabel("Pressed!!")
+    func mapButtonPressed() {
+        self.navigator.navigateToMap()
     }
 }
 
-protocol View {
-    func changeLabel(_ text: String)
+protocol Navigator {
+    func navigateToMap()
 }

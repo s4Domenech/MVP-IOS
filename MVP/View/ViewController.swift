@@ -8,20 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController, View {
+class ViewController: UIViewController, Navigator {
     var presenter: ViewControllerPresenter?
     
-    @IBOutlet weak var labelToChange: UILabel!
-    @IBAction func changeLabelButton(_ sender: UIButton) {
-        presenter?.changeLabelButtonPressed()
-    }
-    
-    func changeLabel(_ text: String) {
-        labelToChange.text = text
+    @IBAction func mapButton(_ sender: UIButton) {
+        presenter?.mapButtonPressed()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.presenter = ViewControllerPresenter(view: self)
+        self.presenter = ViewControllerPresenter(navigator: self)
+    }
+    
+    func navigateToMap() {
+        self.performSegue(withIdentifier: "mapview", sender: self)
     }
 }

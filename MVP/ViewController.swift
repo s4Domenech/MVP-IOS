@@ -8,13 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, View {
+    var presenter: ViewControllerPresenter?
+    
+    @IBOutlet weak var labelToChange: UILabel!
+    @IBAction func changeLabelButton(_ sender: UIButton) {
+        presenter?.changeLabelButtonPressed()
+    }
+    
+    func changeLabel(_ text: String) {
+        labelToChange.text = text
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.presenter = ViewControllerPresenter(view: self)
     }
-
-
 }
-

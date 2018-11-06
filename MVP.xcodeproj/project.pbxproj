@@ -15,6 +15,7 @@
 		3F99DD6C2191E8850095D399 /* MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99DD6B2191E8850095D399 /* MVPTests.swift */; };
 		3F99DD772191E8850095D399 /* MVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99DD762191E8850095D399 /* MVPUITests.swift */; };
 		3F99DD872191E9CF0095D399 /* ViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99DD862191E9CF0095D399 /* ViewControllerPresenter.swift */; };
+		3F99DD8E2191FAFB0095D399 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99DD8D2191FAFB0095D399 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3F99DD762191E8850095D399 /* MVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITests.swift; sourceTree = "<group>"; };
 		3F99DD782191E8850095D399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F99DD862191E9CF0095D399 /* ViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenter.swift; sourceTree = "<group>"; };
+		3F99DD8D2191FAFB0095D399 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,13 @@
 		3F99DD552191E8830095D399 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
+				3F99DD8A2191F8010095D399 /* View */,
+				3F99DD892191F7F30095D399 /* Presenter */,
 				3F99DD562191E8830095D399 /* AppDelegate.swift */,
-				3F99DD582191E8830095D399 /* ViewController.swift */,
 				3F99DD5A2191E8830095D399 /* Main.storyboard */,
 				3F99DD5D2191E8850095D399 /* Assets.xcassets */,
 				3F99DD5F2191E8850095D399 /* LaunchScreen.storyboard */,
 				3F99DD622191E8850095D399 /* Info.plist */,
-				3F99DD862191E9CF0095D399 /* ViewControllerPresenter.swift */,
 			);
 			path = MVP;
 			sourceTree = "<group>";
@@ -126,6 +128,23 @@
 				3F99DD782191E8850095D399 /* Info.plist */,
 			);
 			path = MVPUITests;
+			sourceTree = "<group>";
+		};
+		3F99DD892191F7F30095D399 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3F99DD862191E9CF0095D399 /* ViewControllerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3F99DD8A2191F8010095D399 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F99DD582191E8830095D399 /* ViewController.swift */,
+				3F99DD8D2191FAFB0095D399 /* MapViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +281,7 @@
 				3F99DD872191E9CF0095D399 /* ViewControllerPresenter.swift in Sources */,
 				3F99DD592191E8830095D399 /* ViewController.swift in Sources */,
 				3F99DD572191E8830095D399 /* AppDelegate.swift in Sources */,
+				3F99DD8E2191FAFB0095D399 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

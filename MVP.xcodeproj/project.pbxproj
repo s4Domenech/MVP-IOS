@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F8A9C102192D7D600BBCF5F /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A9C0F2192D7D600BBCF5F /* QRViewController.swift */; };
+		3F8A9C122192E57A00BBCF5F /* PassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A9C112192E57A00BBCF5F /* PassViewController.swift */; };
+		3F8A9C142192F2C500BBCF5F /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A9C132192F2C500BBCF5F /* MapPresenter.swift */; };
 		3F99DD572191E8830095D399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99DD562191E8830095D399 /* AppDelegate.swift */; };
-		3F99DD592191E8830095D399 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99DD582191E8830095D399 /* ViewController.swift */; };
+		3F99DD592191E8830095D399 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99DD582191E8830095D399 /* MainViewController.swift */; };
 		3F99DD5C2191E8830095D399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F99DD5A2191E8830095D399 /* Main.storyboard */; };
 		3F99DD5E2191E8850095D399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F99DD5D2191E8850095D399 /* Assets.xcassets */; };
 		3F99DD612191E8850095D399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F99DD5F2191E8850095D399 /* LaunchScreen.storyboard */; };
 		3F99DD6C2191E8850095D399 /* MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99DD6B2191E8850095D399 /* MVPTests.swift */; };
 		3F99DD772191E8850095D399 /* MVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99DD762191E8850095D399 /* MVPUITests.swift */; };
-		3F99DD872191E9CF0095D399 /* ViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99DD862191E9CF0095D399 /* ViewControllerPresenter.swift */; };
+		3F99DD872191E9CF0095D399 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99DD862191E9CF0095D399 /* MainPresenter.swift */; };
 		3F99DD8E2191FAFB0095D399 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99DD8D2191FAFB0095D399 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,9 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F8A9C0F2192D7D600BBCF5F /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		3F8A9C112192E57A00BBCF5F /* PassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassViewController.swift; sourceTree = "<group>"; };
+		3F8A9C132192F2C500BBCF5F /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		3F99DD532191E8830095D399 /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F99DD562191E8830095D399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F99DD582191E8830095D399 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F99DD582191E8830095D399 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3F99DD5B2191E8830095D399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F99DD5D2191E8850095D399 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F99DD602191E8850095D399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,7 +55,7 @@
 		3F99DD722191E8850095D399 /* MVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F99DD762191E8850095D399 /* MVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPUITests.swift; sourceTree = "<group>"; };
 		3F99DD782191E8850095D399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F99DD862191E9CF0095D399 /* ViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenter.swift; sourceTree = "<group>"; };
+		3F99DD862191E9CF0095D399 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		3F99DD8D2191FAFB0095D399 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,7 +139,8 @@
 		3F99DD892191F7F30095D399 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				3F99DD862191E9CF0095D399 /* ViewControllerPresenter.swift */,
+				3F99DD862191E9CF0095D399 /* MainPresenter.swift */,
+				3F8A9C132192F2C500BBCF5F /* MapPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -141,8 +148,10 @@
 		3F99DD8A2191F8010095D399 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3F99DD582191E8830095D399 /* ViewController.swift */,
+				3F99DD582191E8830095D399 /* MainViewController.swift */,
 				3F99DD8D2191FAFB0095D399 /* MapViewController.swift */,
+				3F8A9C0F2192D7D600BBCF5F /* QRViewController.swift */,
+				3F8A9C112192E57A00BBCF5F /* PassViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,8 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F99DD872191E9CF0095D399 /* ViewControllerPresenter.swift in Sources */,
-				3F99DD592191E8830095D399 /* ViewController.swift in Sources */,
+				3F99DD872191E9CF0095D399 /* MainPresenter.swift in Sources */,
+				3F8A9C142192F2C500BBCF5F /* MapPresenter.swift in Sources */,
+				3F8A9C102192D7D600BBCF5F /* QRViewController.swift in Sources */,
+				3F99DD592191E8830095D399 /* MainViewController.swift in Sources */,
+				3F8A9C122192E57A00BBCF5F /* PassViewController.swift in Sources */,
 				3F99DD572191E8830095D399 /* AppDelegate.swift in Sources */,
 				3F99DD8E2191FAFB0095D399 /* MapViewController.swift in Sources */,
 			);

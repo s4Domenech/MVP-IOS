@@ -10,6 +10,7 @@
 		3F8A9C102192D7D600BBCF5F /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A9C0F2192D7D600BBCF5F /* QRViewController.swift */; };
 		3F8A9C122192E57A00BBCF5F /* PassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A9C112192E57A00BBCF5F /* PassViewController.swift */; };
 		3F8A9C142192F2C500BBCF5F /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A9C132192F2C500BBCF5F /* MapPresenter.swift */; };
+		3F8A9C162192FA3700BBCF5F /* QRPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8A9C152192FA3700BBCF5F /* QRPresenter.swift */; };
 		3F99DD572191E8830095D399 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99DD562191E8830095D399 /* AppDelegate.swift */; };
 		3F99DD592191E8830095D399 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F99DD582191E8830095D399 /* MainViewController.swift */; };
 		3F99DD5C2191E8830095D399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F99DD5A2191E8830095D399 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		3F8A9C0F2192D7D600BBCF5F /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		3F8A9C112192E57A00BBCF5F /* PassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassViewController.swift; sourceTree = "<group>"; };
 		3F8A9C132192F2C500BBCF5F /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		3F8A9C152192FA3700BBCF5F /* QRPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRPresenter.swift; sourceTree = "<group>"; };
 		3F99DD532191E8830095D399 /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F99DD562191E8830095D399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F99DD582191E8830095D399 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			children = (
 				3F99DD862191E9CF0095D399 /* MainPresenter.swift */,
 				3F8A9C132192F2C500BBCF5F /* MapPresenter.swift */,
+				3F8A9C152192FA3700BBCF5F /* QRPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				3F8A9C122192E57A00BBCF5F /* PassViewController.swift in Sources */,
 				3F99DD572191E8830095D399 /* AppDelegate.swift in Sources */,
 				3F99DD8E2191FAFB0095D399 /* MapViewController.swift in Sources */,
+				3F8A9C162192FA3700BBCF5F /* QRPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,10 +20,11 @@ class QRPresenter {
     }
     
     func readQRButtonPressed() {
-        
+        view.readQRImage()
     }
 }
 
 protocol QRView {
     func loadQRImage()
+    func readQRImage()
 }

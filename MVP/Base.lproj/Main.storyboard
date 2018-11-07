@@ -151,9 +151,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zhK-N7-WVr">
-                                <rect key="frame" x="33" y="142" width="309" height="498"/>
+                                <rect key="frame" x="33" y="142" width="309" height="232"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="zhK-N7-WVr" secondAttribute="height" multiplier="103:166" id="oho-SO-9HX"/>
+                                    <constraint firstAttribute="width" secondItem="zhK-N7-WVr" secondAttribute="height" multiplier="309:232" id="yBR-hh-pBA"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="121" translatesAutoresizingMaskIntoConstraints="NO" id="btX-ip-orI">
@@ -175,20 +175,30 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.png" translatesAutoresizingMaskIntoConstraints="NO" id="A5y-G7-DVD">
+                                <rect key="frame" x="33" y="401" width="309" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="A5y-G7-DVD" secondAttribute="height" multiplier="309:235" id="h79-PU-KYz"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zhK-N7-WVr" firstAttribute="centerX" secondItem="4IL-qu-Epk" secondAttribute="centerX" id="5MC-wg-tAe"/>
+                            <constraint firstItem="A5y-G7-DVD" firstAttribute="centerX" secondItem="4IL-qu-Epk" secondAttribute="centerX" id="B70-Sk-7Hd"/>
                             <constraint firstItem="4IL-qu-Epk" firstAttribute="trailing" secondItem="btX-ip-orI" secondAttribute="trailing" constant="33" id="F08-JY-rrF"/>
                             <constraint firstItem="btX-ip-orI" firstAttribute="top" secondItem="4IL-qu-Epk" secondAttribute="top" constant="23" id="ICg-5C-ryf"/>
                             <constraint firstItem="zhK-N7-WVr" firstAttribute="width" secondItem="btX-ip-orI" secondAttribute="width" id="Vni-Og-1s4"/>
+                            <constraint firstItem="4IL-qu-Epk" firstAttribute="bottom" secondItem="A5y-G7-DVD" secondAttribute="bottom" constant="31" id="bah-GN-5oB"/>
                             <constraint firstItem="btX-ip-orI" firstAttribute="centerX" secondItem="4IL-qu-Epk" secondAttribute="centerX" id="i7v-mn-69d"/>
-                            <constraint firstItem="zhK-N7-WVr" firstAttribute="top" secondItem="btX-ip-orI" secondAttribute="bottom" constant="25" id="p6O-89-ycm"/>
-                            <constraint firstItem="4IL-qu-Epk" firstAttribute="bottom" secondItem="zhK-N7-WVr" secondAttribute="bottom" constant="27" id="pt2-fg-3a8"/>
+                            <constraint firstItem="zhK-N7-WVr" firstAttribute="top" secondItem="btX-ip-orI" secondAttribute="bottom" constant="25" id="jVu-Rc-Io4"/>
+                            <constraint firstItem="A5y-G7-DVD" firstAttribute="width" secondItem="zhK-N7-WVr" secondAttribute="width" id="pdH-J7-5VG"/>
+                            <constraint firstItem="A5y-G7-DVD" firstAttribute="top" secondItem="zhK-N7-WVr" secondAttribute="bottom" constant="27" id="zGa-y3-baq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4IL-qu-Epk"/>
                     </view>
                     <connections>
+                        <outlet property="frame" destination="A5y-G7-DVD" id="p4J-Tg-mk5"/>
                         <outlet property="imgQR" destination="zhK-N7-WVr" id="prU-lf-Td5"/>
                     </connections>
                 </viewController>
@@ -197,4 +207,7 @@
             <point key="canvasLocation" x="869.60000000000002" y="384.55772113943033"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="square.png" width="1024" height="972"/>
+    </resources>
 </document>

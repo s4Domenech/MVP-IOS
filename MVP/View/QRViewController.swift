@@ -13,6 +13,8 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
     var presenter: QRPresenter?
     
     var video = AVCaptureVideoPreviewLayer()
+    let session = AVCaptureSession()
+    
     @IBOutlet var frame: UIImageView!
     
     @IBAction func generateQRButton(_ sender: UIButton) {
@@ -41,8 +43,6 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
     }
     
     func readQRImage() {
-        let session = AVCaptureSession()
-        
         let captureDevice = AVCaptureDevice.default(for: AVMediaType.video)
         
         do {
@@ -68,17 +68,19 @@ class QRViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
     }
     
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
-        if metadataObjects != nil && metadataObjects.count != nil {
-            if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject {
-                if object.type == AVMetadataObject.ObjectType.qr {
-                    let alert = UIAlertController(title: "QR Code", message: "Message", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
-                    alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: { (nil) in
-                        UIPasteboard.general.string = object.stringValue
-                    }))
-                    
-                    present(alert, animated: true, completion: nil)
-                }
+        session.stopRunning()
+        
+        if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject {
+            if object.type == AVMetadataObject.ObjectType.qr {
+                let alert = UIAlertController(title: "QR Code", message: "Message", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: { (nil) in
+                    self.session.startRunning()
+                }))
+                alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: { (nil) in
+                    UIPasteboard.general.string = object.stringValue
+                }))
+                
+                present(alert, animated: true, completion: nil)
             }
         }
     }

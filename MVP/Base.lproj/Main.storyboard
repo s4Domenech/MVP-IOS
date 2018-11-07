@@ -72,9 +72,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Om0-at-xOo"/>
                     <connections>
-                        <segue destination="IhN-gF-xe4" kind="show" identifier="mapview" id="oMN-GI-oyw"/>
-                        <segue destination="4lF-eh-HTh" kind="show" identifier="qrview" id="l7A-Rj-oaF"/>
-                        <segue destination="Jjv-gc-kqg" kind="show" identifier="passview" id="leA-uN-AJV"/>
+                        <segue destination="IhN-gF-xe4" kind="show" identifier="maintomap" id="oMN-GI-oyw"/>
+                        <segue destination="4lF-eh-HTh" kind="show" identifier="maintoqr" id="l7A-Rj-oaF"/>
+                        <segue destination="Jjv-gc-kqg" kind="show" identifier="maintopass" id="leA-uN-AJV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

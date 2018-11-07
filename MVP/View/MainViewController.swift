@@ -29,15 +29,15 @@ class MainViewController: UIViewController, MainNavigator {
     }
     
     func navigateToMapView() {
-        self.performSegue(withIdentifier: "mapview", sender: self)
+        self.performSegue(withIdentifier: Segues.mainToMap.rawValue, sender: self)
     }
     
     func navigateToQrView() {
-        self.performSegue(withIdentifier: "qrview", sender: self)
+        self.performSegue(withIdentifier: Segues.mainToQR.rawValue, sender: self)
     }
     
     func navigateToPassView() {
-        self.performSegue(withIdentifier: "passview", sender: self)
+        self.performSegue(withIdentifier: Segues.mainToPass.rawValue, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
